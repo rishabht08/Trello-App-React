@@ -1,0 +1,169 @@
+.mainBody {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.categoryList {
+  display: flex;
+
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.categoryArea {
+  display: flex;
+  flex-direction: column;
+  width: 22rem;
+  height: 600px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px 5px #ccc;
+}
+
+.categoryEdit {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+
+  padding-top: 0.5rem;
+  box-shadow: 0px 0px 5px 0px #ccc;
+}
+
+.task-list {
+  flex-direction: column;
+  width: 100%;
+  height: 500px;
+  padding: 0.5rem;
+  overflow-y: scroll;
+}
+
+.tasks {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 3rem;
+  transition: 0.3s;
+  padding-top: 1rem;
+  
+}
+
+.tasks:hover{
+  box-shadow: 3px 3px 3px 3px #ccc;
+}
+
+.tasks-g{
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 3rem;
+
+  transition: 0.3s;
+  background-color: greenyellow;
+  padding-top: 1rem;
+
+}
+.tasks-g:hover{
+  box-shadow: 3px 3px 3px 3px #ccc;
+}
+
+.taskWrapper{
+  display:flex;
+  flex-direction: column;
+
+  height: 5rem;
+  border: 1px solid #ccc;
+  margin-top: 1rem;
+  border-radius: 10px;
+ 
+  transition: 0.3s;
+}
+
+.changeCategory{
+  text-align: center;
+  height: 2rem;
+  border-top: 1px solid #ccc;
+  cursor: pointer;
+  opacity: 0;
+  color: white;
+  background: black;
+  transition: 0.3s;
+}
+
+.taskWrapper:hover .changeCategory{
+  opacity:0.6;
+}
+
+.pagn {
+  margin-top: 2rem;
+}
+
+.category-tools {
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 28%;
+  width: 80%;
+}
+
+.category-tools span {
+  width: 3rem;
+  cursor: pointer;
+  color: gray;
+}
+
+.pContainer {
+  width: 2.5rem;
+}
+
+.taskName {
+  width: 40%;
+  padding-left: 0.5rem;
+}
+
+.taskStatus {
+  width: 30%;
+}
+
+.tools {
+  display: flex;
+  justify-content: space-evenly;
+  width: 30%;
+}
+.tools span {
+  color: gray;
+  cursor: pointer;
+}
+
+.modalCard {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  border: 1px solid #ccc;
+  text-align: center;
+  padding-top: 0.5rem;
+  border-radius: 5px;
+  margin-top:1rem;
+  box-shadow: 3px 3px 3px 3px #ccc;
+  transition: 0.3s;
+}
+
+.modalCard:hover{
+  transform: scale(1.05);
+}
+
+.taskNameM {
+  width: 40%;
+  font-weight: 700;
+}
+
+.taskStatusM {
+  width: 20%;
+  font-weight: 500;
+}
+
+.taskCategoryM {
+  width: 40%;
+  font-weight: 500;
+  font-family: inherit;
+}
